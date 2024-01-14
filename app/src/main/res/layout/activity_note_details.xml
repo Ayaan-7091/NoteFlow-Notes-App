@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".NoteDetailsActivity"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_title_bar">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Note"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/add_note_btn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_done_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/white"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/note_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners"
+        android:layout_below="@id/save_title_bar"
+        android:layout_marginVertical="16dp"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/note_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note Title"
+            android:textSize="20sp"
+            android:layout_marginVertical="12dp"
+            android:padding="12dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/note_content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Content"
+            android:minLines="15"
+            android:gravity="top"
+            android:layout_below="@id/note_title_text"
+            android:textSize="20sp"
+            android:layout_marginVertical="12dp"
+            android:padding="12dp"
+           />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/delete_note_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note_editor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/custom_delete_btn"
+        android:padding="12dp"
+        android:text="Delete Note"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

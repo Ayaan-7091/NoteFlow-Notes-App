@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners"
+    android:padding="12dp"
+    android:layout_marginVertical="8dp">
+
+    <TextView
+        android:id="@+id/note_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="note title"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="8dp"/>
+
+    <TextView
+        android:id="@+id/note_content_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="note content  { This is samle text to show }"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginVertical="4dp"/>
+
+    <TextView
+        android:id="@+id/note_timestamp_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary"
+        android:textStyle="bold"
+        android:text="note title"
+        android:textSize="10sp"
+        android:layout_marginVertical="4dp"
+        android:gravity="right"/>
+
+</LinearLayout>
